@@ -9,7 +9,7 @@ What this will do is provide what is needed to simply startup Xcode and start ru
 
 How to use this:
 
-    1. Open the project in Xcode.
+    1. Open the project in Xcode 7+.
     2. Create a new file that is a subclass of BaseOpenGLView.
     3. Go to Main.storyboard and set the ViewController's view to the subclass that you just created.
     4. Implement the following 3 functions:
