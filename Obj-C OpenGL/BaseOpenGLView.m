@@ -85,6 +85,7 @@
 - (void)startUp { }
 - (void)shutDown { }
 - (void)render:(double)currentTime { }
+- (void)onResize:(int)width :(int)height { }
 
 GLuint loadTextureFromSourcefile(NSString *fileName) {
 	NSArray *extension = [fileName componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
@@ -110,8 +111,7 @@ const GLchar *loadShaderFromSourcefile(NSString *fileName) {
 		path = [[NSBundle mainBundle] pathForResource:fileName ofType:extension.lastObject];
 	}
 	
-	NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-//	static const char *sourceString[] = { [content UTF8String] };	
+	NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];	
 	return [content UTF8String];
 }
 
@@ -150,6 +150,7 @@ void logShader(GLuint shader) {
 	NSRect viewRectPoints = self.bounds;
 	NSRect viewRectPixels = [self convertRectToBacking:viewRectPoints];
 	glViewport(0, 0, viewRectPixels.size.width, viewRectPixels.size.height);
+	[self onResize:(int)viewRectPixels.size.width :(int)viewRectPixels.size.height];
 	CGLUnlockContext([self.openGLContext CGLContextObj]);
 }
 

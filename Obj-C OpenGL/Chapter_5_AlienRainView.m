@@ -1,9 +1,9 @@
-#import "Chapter_5_View.h"
+#import "Chapter_5_AlienRainView.h"
 #import "vmath.h"
 #include <cmath>
 #include <string>
 
-@interface Chapter_5_View()
+@interface Chapter_5_AlienRainView()
 {
 	GLuint texture;
 	GLuint rainBuffer;
@@ -29,7 +29,7 @@ static inline float random_float() {
 }
 
 
-@implementation Chapter_5_View
+@implementation Chapter_5_AlienRainView
 
 - (void)startUp
 {

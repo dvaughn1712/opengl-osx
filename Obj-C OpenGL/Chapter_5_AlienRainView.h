@@ -5,6 +5,6 @@
 
 #import "BaseOpenGLView.h"
 
-@interface Chapter_5_View : BaseOpenGLView
+@interface Chapter_5_AlienRainView : BaseOpenGLView
 
 @end

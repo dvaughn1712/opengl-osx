@@ -669,8 +669,8 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl" customClass="Chapter_5_View">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                    <view key="view" id="m2S-Jp-Qdl" customClass="Chapter_5_MiniCube">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </view>
