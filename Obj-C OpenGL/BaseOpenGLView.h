@@ -8,10 +8,16 @@
 #import <OpenGL/OpenGL.h>
 #import <OpenGL/gl3.h>
 
+struct BaseInfo {
+	int windowWidth;
+	int windowHeight;
+};
+
 @interface BaseOpenGLView : NSOpenGLView
 {
 	GLuint renderProgram;
 	GLuint vao;
+	BaseInfo info;
 }
 
 - (void)startUp;

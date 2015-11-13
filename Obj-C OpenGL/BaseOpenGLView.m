@@ -48,6 +48,9 @@
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
+	NSRect viewRectPixels = [self convertRectToBacking:dirtyRect];
+	info.windowWidth = (int)viewRectPixels.size.width;
+	info.windowHeight = (int)viewRectPixels.size.height;
 	[self drawView];
 }
 
@@ -150,6 +153,8 @@ void logShader(GLuint shader) {
 	NSRect viewRectPoints = self.bounds;
 	NSRect viewRectPixels = [self convertRectToBacking:viewRectPoints];
 	glViewport(0, 0, viewRectPixels.size.width, viewRectPixels.size.height);
+	info.windowWidth = (int)viewRectPixels.size.width;
+	info.windowHeight = (int)viewRectPixels.size.height;
 	[self onResize:(int)viewRectPixels.size.width :(int)viewRectPixels.size.height];
 	CGLUnlockContext([self.openGLContext CGLContextObj]);
 }
