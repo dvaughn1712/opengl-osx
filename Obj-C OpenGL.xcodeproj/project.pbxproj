@@ -17,6 +17,9 @@
 		CB8B65AD1BF6765200307444 /* cube_vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65AC1BF6765200307444 /* cube_vertex.glsl */; };
 		CB8B65AF1BF6765B00307444 /* cube_fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65AE1BF6765B00307444 /* cube_fragment.glsl */; };
 		CB8B65B71BF67D9F00307444 /* Chapter_7_Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65B61BF67D9F00307444 /* Chapter_7_Cube.m */; };
+		CB8B65BA1BF68DF400307444 /* Chapter_7_Rectangles.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */; };
+		CB8B65BD1BF692A600307444 /* rectangle_vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65BC1BF692A600307444 /* rectangle_vertex.glsl */; };
+		CB8B65BF1BF692B300307444 /* rectangle_fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65BE1BF692B300307444 /* rectangle_fragment.glsl */; };
 		CBA391B01BF2A01300EECA64 /* Chapter_2_View.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA391AF1BF2A01300EECA64 /* Chapter_2_View.m */; };
 		CBC0A58F1BF3E63B00444605 /* sb6ktx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBC0A58E1BF3E63B00444605 /* sb6ktx.cpp */; };
 		CBC0A5921BF3EABC00444605 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC0A5911BF3EABC00444605 /* OpenGL.framework */; };
@@ -46,6 +49,10 @@
 		CB8B65AE1BF6765B00307444 /* cube_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube_fragment.glsl; sourceTree = "<group>"; };
 		CB8B65B51BF67D9F00307444 /* Chapter_7_Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_7_Cube.h; sourceTree = "<group>"; };
 		CB8B65B61BF67D9F00307444 /* Chapter_7_Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_7_Cube.m; sourceTree = "<group>"; };
+		CB8B65B81BF68DF400307444 /* Chapter_7_Rectangles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_7_Rectangles.h; sourceTree = "<group>"; };
+		CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_7_Rectangles.m; sourceTree = "<group>"; };
+		CB8B65BC1BF692A600307444 /* rectangle_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rectangle_vertex.glsl; sourceTree = "<group>"; };
+		CB8B65BE1BF692B300307444 /* rectangle_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rectangle_fragment.glsl; sourceTree = "<group>"; };
 		CBA391AE1BF2A01300EECA64 /* Chapter_2_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_2_View.h; sourceTree = "<group>"; };
 		CBA391AF1BF2A01300EECA64 /* Chapter_2_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_2_View.m; sourceTree = "<group>"; };
 		CBC0A58E1BF3E63B00444605 /* sb6ktx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sb6ktx.cpp; sourceTree = "<group>"; };
@@ -157,6 +164,8 @@
 			children = (
 				CB8B65B51BF67D9F00307444 /* Chapter_7_Cube.h */,
 				CB8B65B61BF67D9F00307444 /* Chapter_7_Cube.m */,
+				CB8B65B81BF68DF400307444 /* Chapter_7_Rectangles.h */,
+				CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */,
 			);
 			name = "Chapter 7";
 			sourceTree = "<group>";
@@ -168,6 +177,15 @@
 				CBA391AF1BF2A01300EECA64 /* Chapter_2_View.m */,
 			);
 			name = "Chapter 2";
+			sourceTree = "<group>";
+		};
+		CB8B65BB1BF6928F00307444 /* Chapter 7 */ = {
+			isa = PBXGroup;
+			children = (
+				CB8B65BC1BF692A600307444 /* rectangle_vertex.glsl */,
+				CB8B65BE1BF692B300307444 /* rectangle_fragment.glsl */,
+			);
+			name = "Chapter 7";
 			sourceTree = "<group>";
 		};
 		CB8D35AE1BF5245C00DE4754 /* sb6 Files */ = {
@@ -185,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8B65B01BF67AD500307444 /* Chapter 5 */,
+				CB8B65BB1BF6928F00307444 /* Chapter 7 */,
 			);
 			name = "Chapter Shaders";
 			sourceTree = "<group>";
@@ -260,9 +279,11 @@
 				CBC0A59A1BF3EC8B00444605 /* media in Resources */,
 				CB10758C1BF2862900169013 /* Assets.xcassets in Resources */,
 				CB8B65AD1BF6765200307444 /* cube_vertex.glsl in Resources */,
+				CB8B65BF1BF692B300307444 /* rectangle_fragment.glsl in Resources */,
 				CB10758F1BF2862900169013 /* Main.storyboard in Resources */,
 				CBC0A5D31BF4FB5100444605 /* alien_fragment.glsl in Resources */,
 				CBC0A5D21BF4FB5100444605 /* alien_vertex.glsl in Resources */,
+				CB8B65BD1BF692A600307444 /* rectangle_vertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8B65B71BF67D9F00307444 /* Chapter_7_Cube.m in Sources */,
+				CB8B65BA1BF68DF400307444 /* Chapter_7_Rectangles.m in Sources */,
 				CB1075981BF2878900169013 /* BaseOpenGLView.m in Sources */,
 				CBA391B01BF2A01300EECA64 /* Chapter_2_View.m in Sources */,
 				CB10758A1BF2862900169013 /* ViewController.m in Sources */,

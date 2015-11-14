@@ -152,7 +152,6 @@ void logShader(GLuint shader) {
 	CGLLockContext([self.openGLContext CGLContextObj]);
 	NSRect viewRectPoints = self.bounds;
 	NSRect viewRectPixels = [self convertRectToBacking:viewRectPoints];
-	glViewport(0, 0, viewRectPixels.size.width, viewRectPixels.size.height);
 	info.windowWidth = (int)viewRectPixels.size.width;
 	info.windowHeight = (int)viewRectPixels.size.height;
 	[self onResize:(int)viewRectPixels.size.width :(int)viewRectPixels.size.height];
