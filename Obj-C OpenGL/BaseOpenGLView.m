@@ -89,6 +89,7 @@
 - (void)shutDown { }
 - (void)render:(double)currentTime { }
 - (void)onResize:(int)width :(int)height { }
+- (void)onKey:(int)key action:(int)action { }
 
 GLuint loadTextureFromSourcefile(NSString *fileName) {
 	NSArray *extension = [fileName componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
@@ -118,6 +119,11 @@ const GLchar *loadShaderFromSourcefile(NSString *fileName) {
 	return [content UTF8String];
 }
 
+const GLchar *loadShaderFromSourcefile(const char *fileName) {
+	NSString *nsFileName = [NSString stringWithUTF8String:fileName];
+	return loadShaderFromSourcefile(nsFileName);
+}
+
 void logShader(GLuint shader) {
 	GLint logLength;
 	glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &logLength);
@@ -127,6 +133,21 @@ void logShader(GLuint shader) {
 		glGetShaderInfoLog(shader, logLength, NULL, utfString);
 		NSLog(@"Shader ERROR: %s", utfString);
 	}
+}
+
+sb6::object loadObjectFromSourceFile(NSString *fileName) {
+	NSArray *extension = [fileName componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
+	NSString *path = @"";
+	if ([extension.lastObject isEqualToString:fileName]) {
+		// try to load glsl as the default extension
+		path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"media/objects/%@", fileName]  ofType:@"sbm"];
+	} else {
+		fileName = [fileName stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@".%@", extension.lastObject] withString:@""];
+		path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"media/objects/%@", fileName] ofType:extension.lastObject];
+	}
+	sb6::object object;
+	object.load([path UTF8String]);
+	return object;
 }
 
 - (void) drawView
@@ -173,6 +194,17 @@ void logShader(GLuint shader) {
 		[self drawView];
 	}
 	return kCVReturnSuccess;
+}
+
+- (void)keyDown:(NSEvent *)theEvent
+{
+	NSString *characters = [theEvent.charactersIgnoringModifiers uppercaseString];
+	char character = [characters characterAtIndex:0];
+	[self onKey:character action:1];
+}
+
+- (BOOL)acceptsFirstResponder {
+	return YES;
 }
 
 // This is the renderer output callback function

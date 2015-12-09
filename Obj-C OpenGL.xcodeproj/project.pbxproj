@@ -20,6 +20,9 @@
 		CB8B65BA1BF68DF400307444 /* Chapter_7_Rectangles.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */; };
 		CB8B65BD1BF692A600307444 /* rectangle_vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65BC1BF692A600307444 /* rectangle_vertex.glsl */; };
 		CB8B65BF1BF692B300307444 /* rectangle_fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CB8B65BE1BF692B300307444 /* rectangle_fragment.glsl */; };
+		CB8B65C21BF6D34900307444 /* Chapter_7_Asteroids.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65C11BF6D34900307444 /* Chapter_7_Asteroids.m */; };
+		CB8B65C51BF6D78200307444 /* sb6object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65C31BF6D78200307444 /* sb6object.cpp */; };
+		CB8B65C61BF6D78200307444 /* sb6shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8B65C41BF6D78200307444 /* sb6shader.cpp */; };
 		CBA391B01BF2A01300EECA64 /* Chapter_2_View.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA391AF1BF2A01300EECA64 /* Chapter_2_View.m */; };
 		CBC0A58F1BF3E63B00444605 /* sb6ktx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBC0A58E1BF3E63B00444605 /* sb6ktx.cpp */; };
 		CBC0A5921BF3EABC00444605 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC0A5911BF3EABC00444605 /* OpenGL.framework */; };
@@ -29,6 +32,17 @@
 		CBC0A59D1BF3ECCF00444605 /* Chapter_5_AlienRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC0A59C1BF3ECCF00444605 /* Chapter_5_AlienRainView.m */; };
 		CBC0A5D21BF4FB5100444605 /* alien_vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBC0A5D01BF4FB5100444605 /* alien_vertex.glsl */; };
 		CBC0A5D31BF4FB5100444605 /* alien_fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBC0A5D11BF4FB5100444605 /* alien_fragment.glsl */; };
+		CBF080181C1789AE00D11F81 /* Chapter_8_Tessmodes.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF080171C1789AE00D11F81 /* Chapter_8_Tessmodes.m */; };
+		CBF0801B1C178A7000D11F81 /* tessmodes_vs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF0801A1C178A7000D11F81 /* tessmodes_vs.glsl */; };
+		CBF0801D1C178A7A00D11F81 /* tessmodes_tcs_triangles.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF0801C1C178A7A00D11F81 /* tessmodes_tcs_triangles.glsl */; };
+		CBF0801F1C178A8600D11F81 /* tessmodes_tes_triangles.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF0801E1C178A8600D11F81 /* tessmodes_tes_triangles.glsl */; };
+		CBF080231C178C4E00D11F81 /* tessmodes_tes_triangles_points.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF080221C178C4E00D11F81 /* tessmodes_tes_triangles_points.glsl */; };
+		CBF080251C178CD900D11F81 /* tessmodes_tcs_quads.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF080241C178CD900D11F81 /* tessmodes_tcs_quads.glsl */; };
+		CBF080271C178D7C00D11F81 /* tessmodes_tes_quads.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF080261C178D7C00D11F81 /* tessmodes_tes_quads.glsl */; };
+		CBF080291C178E0B00D11F81 /* tessmodes_tcs_isolines.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF080281C178E0B00D11F81 /* tessmodes_tcs_isolines.glsl */; };
+		CBF0802B1C178E8A00D11F81 /* tessmodes_tes_isolines.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF0802A1C178E8A00D11F81 /* tessmodes_tes_isolines.glsl */; };
+		CBF0802D1C178F0100D11F81 /* tessmodes_fs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBF0802C1C178F0100D11F81 /* tessmodes_fs.glsl */; };
+		CBF995AE1BFF68B70045C4DC /* Chapter_7_Springmass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF995AD1BFF68B70045C4DC /* Chapter_7_Springmass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +67,12 @@
 		CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_7_Rectangles.m; sourceTree = "<group>"; };
 		CB8B65BC1BF692A600307444 /* rectangle_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rectangle_vertex.glsl; sourceTree = "<group>"; };
 		CB8B65BE1BF692B300307444 /* rectangle_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rectangle_fragment.glsl; sourceTree = "<group>"; };
+		CB8B65C01BF6D34900307444 /* Chapter_7_Asteroids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_7_Asteroids.h; sourceTree = "<group>"; };
+		CB8B65C11BF6D34900307444 /* Chapter_7_Asteroids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_7_Asteroids.m; sourceTree = "<group>"; };
+		CB8B65C31BF6D78200307444 /* sb6object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sb6object.cpp; sourceTree = "<group>"; };
+		CB8B65C41BF6D78200307444 /* sb6shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sb6shader.cpp; sourceTree = "<group>"; };
+		CB8B65C71BF6D86200307444 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		CB8B65C81BF6D8C200307444 /* sb6mfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sb6mfile.h; sourceTree = "<group>"; };
 		CBA391AE1BF2A01300EECA64 /* Chapter_2_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_2_View.h; sourceTree = "<group>"; };
 		CBA391AF1BF2A01300EECA64 /* Chapter_2_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_2_View.m; sourceTree = "<group>"; };
 		CBC0A58E1BF3E63B00444605 /* sb6ktx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sb6ktx.cpp; sourceTree = "<group>"; };
@@ -66,6 +86,19 @@
 		CBC0A59F1BF3EE7E00444605 /* vmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vmath.h; sourceTree = "<group>"; };
 		CBC0A5D01BF4FB5100444605 /* alien_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alien_vertex.glsl; sourceTree = "<group>"; };
 		CBC0A5D11BF4FB5100444605 /* alien_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alien_fragment.glsl; sourceTree = "<group>"; };
+		CBF080161C1789AE00D11F81 /* Chapter_8_Tessmodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_8_Tessmodes.h; sourceTree = "<group>"; };
+		CBF080171C1789AE00D11F81 /* Chapter_8_Tessmodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_8_Tessmodes.m; sourceTree = "<group>"; };
+		CBF0801A1C178A7000D11F81 /* tessmodes_vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_vs.glsl; sourceTree = "<group>"; };
+		CBF0801C1C178A7A00D11F81 /* tessmodes_tcs_triangles.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tcs_triangles.glsl; sourceTree = "<group>"; };
+		CBF0801E1C178A8600D11F81 /* tessmodes_tes_triangles.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tes_triangles.glsl; sourceTree = "<group>"; };
+		CBF080221C178C4E00D11F81 /* tessmodes_tes_triangles_points.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tessmodes_tes_triangles_points.glsl; path = ../tessmodes_tes_triangles_points.glsl; sourceTree = "<group>"; };
+		CBF080241C178CD900D11F81 /* tessmodes_tcs_quads.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tcs_quads.glsl; sourceTree = "<group>"; };
+		CBF080261C178D7C00D11F81 /* tessmodes_tes_quads.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tes_quads.glsl; sourceTree = "<group>"; };
+		CBF080281C178E0B00D11F81 /* tessmodes_tcs_isolines.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tcs_isolines.glsl; sourceTree = "<group>"; };
+		CBF0802A1C178E8A00D11F81 /* tessmodes_tes_isolines.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_tes_isolines.glsl; sourceTree = "<group>"; };
+		CBF0802C1C178F0100D11F81 /* tessmodes_fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessmodes_fs.glsl; sourceTree = "<group>"; };
+		CBF995AC1BFF68B70045C4DC /* Chapter_7_Springmass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter_7_Springmass.h; sourceTree = "<group>"; };
+		CBF995AD1BFF68B70045C4DC /* Chapter_7_Springmass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter_7_Springmass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +177,7 @@
 				CB8B65B41BF67D6A00307444 /* Chapter 2 */,
 				CB8B65B21BF67D4B00307444 /* Chapter 5 */,
 				CB8B65B31BF67D5100307444 /* Chapter 7 */,
+				CBF080121C1788EF00D11F81 /* Chapter 8 */,
 			);
 			name = Chapters;
 			sourceTree = "<group>";
@@ -166,6 +200,10 @@
 				CB8B65B61BF67D9F00307444 /* Chapter_7_Cube.m */,
 				CB8B65B81BF68DF400307444 /* Chapter_7_Rectangles.h */,
 				CB8B65B91BF68DF400307444 /* Chapter_7_Rectangles.m */,
+				CB8B65C01BF6D34900307444 /* Chapter_7_Asteroids.h */,
+				CB8B65C11BF6D34900307444 /* Chapter_7_Asteroids.m */,
+				CBF995AC1BFF68B70045C4DC /* Chapter_7_Springmass.h */,
+				CBF995AD1BFF68B70045C4DC /* Chapter_7_Springmass.m */,
 			);
 			name = "Chapter 7";
 			sourceTree = "<group>";
@@ -193,8 +231,12 @@
 			children = (
 				CBC0A5991BF3EC8B00444605 /* media */,
 				CBC0A5901BF3E71F00444605 /* sb6ktx.h */,
+				CB8B65C81BF6D8C200307444 /* sb6mfile.h */,
+				CB8B65C71BF6D86200307444 /* object.h */,
 				CBC0A59F1BF3EE7E00444605 /* vmath.h */,
 				CBC0A58E1BF3E63B00444605 /* sb6ktx.cpp */,
+				CB8B65C31BF6D78200307444 /* sb6object.cpp */,
+				CB8B65C41BF6D78200307444 /* sb6shader.cpp */,
 			);
 			name = "sb6 Files";
 			sourceTree = "<group>";
@@ -204,6 +246,7 @@
 			children = (
 				CB8B65B01BF67AD500307444 /* Chapter 5 */,
 				CB8B65BB1BF6928F00307444 /* Chapter 7 */,
+				CBF080191C178A4200D11F81 /* Chapter 8 */,
 			);
 			name = "Chapter Shaders";
 			sourceTree = "<group>";
@@ -216,6 +259,31 @@
 				CBC0A5911BF3EABC00444605 /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF080121C1788EF00D11F81 /* Chapter 8 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF080161C1789AE00D11F81 /* Chapter_8_Tessmodes.h */,
+				CBF080171C1789AE00D11F81 /* Chapter_8_Tessmodes.m */,
+			);
+			name = "Chapter 8";
+			sourceTree = "<group>";
+		};
+		CBF080191C178A4200D11F81 /* Chapter 8 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF0801A1C178A7000D11F81 /* tessmodes_vs.glsl */,
+				CBF0802C1C178F0100D11F81 /* tessmodes_fs.glsl */,
+				CBF0801C1C178A7A00D11F81 /* tessmodes_tcs_triangles.glsl */,
+				CBF0801E1C178A8600D11F81 /* tessmodes_tes_triangles.glsl */,
+				CBF080221C178C4E00D11F81 /* tessmodes_tes_triangles_points.glsl */,
+				CBF080241C178CD900D11F81 /* tessmodes_tcs_quads.glsl */,
+				CBF080261C178D7C00D11F81 /* tessmodes_tes_quads.glsl */,
+				CBF080281C178E0B00D11F81 /* tessmodes_tcs_isolines.glsl */,
+				CBF0802A1C178E8A00D11F81 /* tessmodes_tes_isolines.glsl */,
+			);
+			name = "Chapter 8";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,13 +343,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF080291C178E0B00D11F81 /* tessmodes_tcs_isolines.glsl in Resources */,
+				CBF0801F1C178A8600D11F81 /* tessmodes_tes_triangles.glsl in Resources */,
+				CBF0801D1C178A7A00D11F81 /* tessmodes_tcs_triangles.glsl in Resources */,
 				CB8B65AF1BF6765B00307444 /* cube_fragment.glsl in Resources */,
+				CBF080271C178D7C00D11F81 /* tessmodes_tes_quads.glsl in Resources */,
 				CBC0A59A1BF3EC8B00444605 /* media in Resources */,
 				CB10758C1BF2862900169013 /* Assets.xcassets in Resources */,
+				CBF080251C178CD900D11F81 /* tessmodes_tcs_quads.glsl in Resources */,
+				CBF0802D1C178F0100D11F81 /* tessmodes_fs.glsl in Resources */,
 				CB8B65AD1BF6765200307444 /* cube_vertex.glsl in Resources */,
+				CBF0802B1C178E8A00D11F81 /* tessmodes_tes_isolines.glsl in Resources */,
 				CB8B65BF1BF692B300307444 /* rectangle_fragment.glsl in Resources */,
 				CB10758F1BF2862900169013 /* Main.storyboard in Resources */,
+				CBF0801B1C178A7000D11F81 /* tessmodes_vs.glsl in Resources */,
 				CBC0A5D31BF4FB5100444605 /* alien_fragment.glsl in Resources */,
+				CBF080231C178C4E00D11F81 /* tessmodes_tes_triangles_points.glsl in Resources */,
 				CBC0A5D21BF4FB5100444605 /* alien_vertex.glsl in Resources */,
 				CB8B65BD1BF692A600307444 /* rectangle_vertex.glsl in Resources */,
 			);
@@ -295,15 +372,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8B65B71BF67D9F00307444 /* Chapter_7_Cube.m in Sources */,
+				CB8B65C21BF6D34900307444 /* Chapter_7_Asteroids.m in Sources */,
 				CB8B65BA1BF68DF400307444 /* Chapter_7_Rectangles.m in Sources */,
 				CB1075981BF2878900169013 /* BaseOpenGLView.m in Sources */,
+				CB8B65C51BF6D78200307444 /* sb6object.cpp in Sources */,
 				CBA391B01BF2A01300EECA64 /* Chapter_2_View.m in Sources */,
 				CB10758A1BF2862900169013 /* ViewController.m in Sources */,
 				CB1075871BF2862900169013 /* main.m in Sources */,
+				CB8B65C61BF6D78200307444 /* sb6shader.cpp in Sources */,
 				CB8B65AB1BF6762200307444 /* Chapter_5_MiniCube.m in Sources */,
 				CBC0A59D1BF3ECCF00444605 /* Chapter_5_AlienRainView.m in Sources */,
 				CB1075841BF2862900169013 /* AppDelegate.m in Sources */,
+				CBF995AE1BFF68B70045C4DC /* Chapter_7_Springmass.m in Sources */,
 				CBC0A58F1BF3E63B00444605 /* sb6ktx.cpp in Sources */,
+				CBF080181C1789AE00D11F81 /* Chapter_8_Tessmodes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
